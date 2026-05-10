@@ -1,0 +1,10 @@
+# Compiled output
+*.exe
+*.o
+*.out
+
+# VS Code
+.vscode/
+
+# Build artifacts
+task_queue
