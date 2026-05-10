@@ -3,8 +3,10 @@
 *.o
 *.out
 
-# VS Code
-.vscode/
+# VS Code (keep tasks.json, ignore local settings)
+.vscode/settings.json
+.vscode/launch.json
+.vscode/c_cpp_properties.json
 
 # Build artifacts
 task_queue

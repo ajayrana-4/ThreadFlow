@@ -1,0 +1,29 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build task_queue (C++17)",
+            "type": "shell",
+            "command": "C:\\msys64\\mingw64\\bin\\g++.exe",
+            "args": [
+                "-std=c++17",
+                "-pthread",
+                "-g",
+                "${file}",
+                "-o",
+                "${fileDirname}\\task_queue.exe"
+            ],
+            "options": {
+                "env": {
+                    "PATH": "C:\\msys64\\mingw64\\bin;C:\\msys64\\usr\\bin;${env:PATH}"
+                }
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"],
+            "detail": "Builds main.cpp using MinGW-w64 GCC 15 (POSIX threads, C++17)"
+        }
+    ]
+}
